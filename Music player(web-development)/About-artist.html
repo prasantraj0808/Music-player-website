@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="media.css">
+      <!--code to get a favicon icon in the tab-->
+	<link rel="icon" href="pictures/favicon.ico.png" type="image/gif" sizes="16x16">
+   <!--code to access the fontawesome icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
+	<title>Bajao</title>
+</head>
+<body>
+	 <!--navigation bar-->
+    <nav>
+        <ul>
+            <li id="bar1"><i class="fas fa-compact-disc"></i></li>
+            <li id="bar2" class="shadow">Satu Studio</li>
+            <li id="bar3" class="shadow"><a href="#">Favourites</a></li>
+            <li id="bar4"> <div id="search"><i class="fas fa-search"></i>
+                    <input id="searchBox" type="text" name="searchBox" placeholder="Search"><i class="fas fa-microphone"></i></div>
+            </li>
+            <li id="bar5"><i class="fas fa-bell"></i></li>
+            <li id="bar6"><img src="pictures/satu.jpg"></li>
+        </ul>
+    </nav>
+    <!--main content of the page-->
+    <content id="content">
+    	<div id="screen-70">
+    		<div id="media-page2">
+    			<div id="img"></div>
+    		    <div id="about-2"><h3 class="shadow">Katy Perry</h3><span id="sp1">British Brand</span>
+    			<p>American pop singer Katy Perry initially attempted to break into the music business with a gospel album. Her image radically changed by the time of her 2008 smash single "I Kissed a Girl," from One of the Boys, and she went on to top the charts with the follow-up albums Teenage Dream, Prism and Witness.</p>
+    			<br>
+    			<button>Play All</button><span id="sp1" style="cursor: pointer;">&emsp;&emsp;Follow</span>
+    			<br>
+    			<span id="sp1">247 Tracks | 128 Albums</span>
+    		   </div>
+    		</div>
+
+
+        <!--artist selected playlist-->
+
+
+    		<div id="artist-song">
+    			<ul>
+    		<li><img src="pictures/OIP (9).jpg"><div>Dilbar</div><i class="fas fa-heart"> </i> </li>
+            <li><img src="pictures/artist-4.jpg"><div>Dilbar</div><i class="fas fa-heart"> </i>
+            </li>
+            <li><img src="pictures/OIP (9).jpg"><div>Dilbar</div><i class="fas fa-heart"> </i> </li>
+            <li><img src="pictures/artist-4.jpg"><div>Dilbar</div><i class="fas fa-heart"> </i> </li>
+            <li><img src="pictures/OIP (9).jpg"><div>Dilbar</div><i class="fas fa-heart"> </i> </li>
+             <li><img src="pictures/artist-4.jpg"><div>Dilbar</div><i class="fas fa-heart"></i> </li>
+             <li><img src="pictures/OIP (9).jpg"><div>Dilbar</div><i class="fas fa-heart"></i> </li>
+             <li><img src="pictures/artist-4.jpg"><div>Dilbar</div><i class="fas fa-heart"></i> </li>
+             <li><img src="pictures/OIP (9).jpg"><div>Dilbar</div><i class="fas fa-heart"></i> </li>
+    			</ul>
+    		</div>
+    		
+    	</div>
+
+      <!--aside bar for queues like similar artists and recrently played songe-->
+
+
+    		<aside id="queue1">
+    			<h3>Similar Artist</h3>
+    			<ol>
+    		<li><img src="pictures/artist-3.jpg"><div>J. Bieber</div><i class="fas fa-heart"> </i> </li>
+            <li><img src="pictures/artist-3.jpg"><div>J. Bieber</div><i class="fas fa-heart"></i>
+            </li>
+            <li><img src="pictures/artist-3.jpg"><div>J. Bieber</div><i class="fas fa-heart"> </i> </li>
+            <li><img src="pictures/artist-3.jpg"><div>J. Bieber</div><i class="fas fa-heart"> </i> </li>
+    			</ol>
+    		<h3 id="recent">Recently Played</h3>
+    		<ol id="recent">
+    				<li><img src="pictures/OIP (9).jpg"><div>Pyar Tha</div><i class="fas fa-heart"> </i> </li>
+            <li><img src="pictures/artist-4.jpg"><div>Ishq hai</div><i class="fas fa-heart"> </i>
+            </li>
+            <li><img src="pictures/OIP (9).jpg"><div>Pyar Tha</div><i class="fas fa-heart"> </i> </li>
+            <li><img src="pictures/artist-4.jpg"><div>Ishq hai</div><i class="fas fa-heart"> </i> </li>
+    			</ol>
+    		</aside>        
+    	
+    </content>
+
+
+    
+    <!-- footer section is here -->
+         <footer id="footer">
+         
+           <div id="progressbar"><input onclick="skip()" id="progress" type="range"></div>
+           <div id="player"  >   
+             <!-- playing song info -->
+                            <div id="playingSong">
+                                 <div id="imageplaying"><img src="pictures/pop.jpg" alt=""></div>
+                                 <div style="color: gray; "> <strong style="color: aliceblue; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; animation: change 2s ease-in-out infinite alternate ;"> Meri Aashiqui</strong> <br>
+                                    Jubin Nautiyal, Rochak Kohli</div>
+                            </div>   
+                             <!-- playing buttons -->
+                            <div id="buttons">
+                                <div><img src="download.png" alt=""></div>
+                                <div><img  src="circle-cropped (5).png" alt=""></div> 
+                                <div ><button onclick="play()" id="play"></button></div>  
+                                <div><img src="circle-cropped (4).png" alt=""></div>
+                                <div><img src="images.png" alt=""></div> 
+                            </div>
+                            <!-- here is the timer -->
+                            <div id="timer">
+                                 <div style="color: gainsboro; animation: change 2s ease-in-out infinite alternate ;"><span id="time1"></span>:<span id="time2" ></span>
+                                   / 5:00</div>
+                                 <div style="color: gainsboro; animation: change 2s ease-in-out infinite alternate ;">Playing</div>
+                                 <div><img id="speaker" src="22-512.webp" alt="">
+                                 <input onclick="volume()" id="slider" width="20px" type="range" name="" id="" style="
+                                   position: fixed;
+                                   margin-right: -10px  ;
+                                   bottom: 100px;
+                                   transform: rotateZ(270deg);
+
+                                     
+                                    
+                                ">
+                                </div>
+                            </div>
+
+            </div>
+           
+         </footer>
+    </div>
+
+    <audio style="display: none;" controls id="audio">
+      <source src="Meri Aashiqui.mp3" type="audio/mpeg">
+      <!-- Your browser does not support the audio element. -->
+      </audio>
+<script>
+
+var myMusic=document.getElementById("audio");
+var progress=document.getElementById("progress");
+var pla=document.getElementById("play");
+var time1=document.getElementById("time1");
+var time2=document.getElementById("time2");
+var slider=document.getElementById("slider");
+
+function volume(){
+  console.log(slider.value/100);
+  myMusic.volume=(slider.value/100);
+
+  
+}
+
+var count=0;
+
+function skip(){
+  myMusic.currentTime=progress.value*3;
+  console.log(progress.value);
+  console.log(myMusic.currentTime);
+  count--;
+  play();
+  
+}
+
+function play()
+{
+  if(count%2==0){
+      myMusic.play();
+      pla.id="playing";
+  }
+  else{
+    myMusic.pause();
+    pla.id="pause";
+
+  }
+
+count++;
+
+}
+
+var t=00;
+
+setInterval(function(){
+              progress.value=(myMusic.currentTime/300)*100;
+              if(progress.value==100){
+                pla.id="pause";
+                
+              }
+              else{
+              
+
+              }
+
+              
+                t=Math.trunc(myMusic.currentTime/60);
+                
+              
+                   
+                 
+              time2.innerText=Math.trunc(myMusic.currentTime%60);
+              time1.innerText=t;
+}, 1000);
+</script>
+
+</body>
+</html>
